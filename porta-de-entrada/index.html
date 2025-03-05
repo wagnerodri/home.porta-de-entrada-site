@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="BR-pt">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porta de entrada</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/js/app.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="container">
+            <!-- Imagem principal -->
+            <div class="col-2">
+                <img src="assets/img/Logo-completo.png" alt="Banner">
+            </div>
+   <!-- Ícones no banner -->  
+<div class="banner-icons">
+    <p>Valorização de Inicativas Culturais</p>
+    <a href="pagina1.html" target="_blank"><img src="assets/img/instagram.png" alt="Logo 1"></a>
+    <a href="pagina2.html" target="_blank"><img src="assets/img/facebook.png" alt="Logo 2"></a>
+    <a href="pagina3.html" target="_blank"><img src="assets/img/youtube.png" alt="Logo 3"></a>
+    <a href="javascript:void(0);" id="searchLink">
+        <img src="assets/img/lupa.png" alt="Pesquisar" class="search-icon">
+      </a>
+      
+      <!-- Barra de Pesquisa -->
+      <div id="searchBar" style="display: none;">
+        <input type="text" placeholder="Digite sua pesquisa...">
+    </div>
+    <div class="banner-icons-2">
+        <a href="pagina1.html" target="_blank"><img src="assets/img/Parte-Abaixo-03.png" alt="Logo 1"></a>
+        <a href="pagina2.html" target="_blank"><img src="assets/img/parte-abaixo-02.png" alt="Logo 2"></a>
+        <a href="pagina3.html" target="_blank"><img src="assets/img/Parte-Abaixo-01.png" alt="Logo 3"></a>
+    </div>
+       
+</div>
+
+
+
+<!-- Barra de pesquisa oculta -->
+<div class="search-bar" id="searchBar">
+    <input type="text" placeholder="Digite sua pesquisa...">
+</div>
+
+
+<!--MENU HABURGUER-->
+
+
+
+
+
+
+
+    
+            <!-- Menu de navegação abaixo do banner --> 
+<!--****************************************************************************************************************-->
+<nav>
+    <div class="hamburger-icon" id="hamburger-icon">&#9776;</div> <!-- Ícone de hambúrguer -->
+    <ul id="MenuItens">
+        <li class="dropdown">
+            <a href="#" onclick="toggleSubmenu(event)">Sobre o VAI</a>
+            <ul class="submenu">
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Pesquisas<br> Sobre o VAI</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleSubmenu(event)">Edital 2025</a>
+            <ul class="submenu">
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Pesquisas<br> Sobre o VAI</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleSubmenu(event)">Biblioteca</a>
+            <ul class="submenu">
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Pesquisar</a></li>
+                <li><a href="#">Sobre o VAI</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleSubmenu(event)">Edições</a>
+            <ul class="submenu">
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Pesquisas<br> Sobre o VAI</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleSubmenu(event)">Transparência</a>
+            <ul class="submenu">
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Pesquisas<br> Sobre o VAI</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleSubmenu(event)">Contato</a>
+            <ul class="submenu">
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Pesquisas<br> Sobre o VAI</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+  
+       
+            
+        </div>
+        <div class="image-carousel">
+            <div class="carousel-container">
+                <div class="col-3">
+                    <img src="assets/img/img-conlcuida.png" alt="1">
+                </div>
+                <div class="col-3">
+                    <img src="assets/img/IMG-1-OK.jpg" alt="2">
+                </div>
+                <div class="col-3">
+                    <img src="assets/img/img-2.png" alt="3">
+                </div>
+                <div class="col-3">
+                    <img src="assets/img/IMG-1-OK.jpg" alt="4">
+                </div>
+            </div>
+        
+            <!-- Navegação de pauzinhos (barra horizontal) -->
+            <div class="navigation-dots">
+                <div class="dot" onclick="changeImage(0)"></div>
+                <div class="dot" onclick="changeImage(1)"></div>
+                <div class="dot" onclick="changeImage(2)"></div>
+                <div class="dot" onclick="changeImage(3)"></div>
+            </div>
+        </div>
+        <!-- Seção de Notícias -->
+        <div class="noticias">
+            <h1>Notícias</h1>
+            <div class="image-container">
+                <div class="col-4">
+                    <img src="assets/img/IMG-1-OK.jpg" alt="Notícia 1">
+                    <div class="news-title">Título da Notícia 1</div>
+                    <div class="news-summary-wrapper">
+                        <div class="news-summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentiall</div><br>
+                        <a href="#" class="read-more">Leia mais</a><br>
+                        <p> 11/02/2025</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="assets/img/IMG-1-OK.jpg" alt="Notícia 2">
+                    <div class="news-title">Título da Notícia 2</div>
+                    <div class="news-summary-wrapper">
+                        <div class="news-summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentiall</div><br>
+                        <a href="#" class="read-more">Leia mais</a><br>
+                        <p> 11/02/2025</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="assets/img/IMG-1-OK.jpg" alt="Notícia 3">
+                    <div class="news-title">Título da Notícia 3</div>
+                    <div class="news-summary-wrapper">
+                        <div class="news-summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentiall</div><br>
+                        <a href="#" class="read-more">Leia mais</a><br>
+                        <p> 11/02/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+
+        <!--  ENTREVISTA E IMAGEM -->
+        <div class="entrevista">
+            <h1>Entrevista</h1>
+        </div>
+        <div class="image-carousel">
+            <div class="carousel-container">
+                <div class="col-3">
+                    <img src="assets/img/IMG-4.png" alt="1">
+                </div>
+            </div>
+        </div>
+        
+        <br><br>
+       
+        <!--PROJETO DA ULTIMA EDIÇÃO-->
+
+
+        <div class="edicao">
+            <h1> Projetos da última Edição</h1>
+        </div>
+        </div>
+    </div>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps?q=São+Paulo+Centro&output=embed"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+ 
+
+    <!--RODAPE-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Seção de Realização -->
+            <div class="realizacao">
+                <h3>Realização</h3>
+                <div class="logos">
+                    <img src="assets/img/SP-P1.png" alt="Logo 1">
+                    <img src="assets/img/SP-2.png" alt="Logo 2">
+                    <img src="assets/img/VAI-SP.png" alt="Logo 3">
+                </div>
+            </div>
+    
+            <!-- Seção de Contatos -->
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <div class="contato-item">
+                    <img src="assets/img/local-2.png" alt="Localização" class="icon" >
+                    <p>Rua Libero Dadaró,346 -4º Andar <br>
+                    Centro- São Paulo, SP (próximo à praça do Patriarca)</p>
+                </div>
+                <div class="contato-item">
+                    <img src="assets/img/email.png" alt="E-mail" class="icon" >
+                    <p>programavai@prefeitura.sp.gov.br</p>
+                </div>
+                <div class="contato-item">
+                    <img src="assets/img/telefone.png" alt="Telefone" class="icon" >
+                    <p>3397-0155 / 3397-0156</p>
+                </div>
+                <div class="contato-item">
+                        <img src="assets/img/rede-2.png" alt="Site" class="icon">
+                        <p>https://capital.sp.gov.br/web/cultura</p>
+                </div>
+                <div class="contato-item">
+                
+                        <img src="assets/img/rede-2.png" alt="Porta de Entrada" class="icon" >
+                    <p>Porta de Entrada https://portadeentrada.prefeitura.sp.gov.br/</p>
+                </div>
+            </div>
+    
+            <!-- Seção de Redes Sociais -->
+            <div class="social-media">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="assets/img/instagram.png" alt="Instagram" class="icon">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="assets/img/facebook.png" alt="Facebook" class="icon">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="assets/img/youtube.png" alt="YouTube" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+        
+
+    
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
